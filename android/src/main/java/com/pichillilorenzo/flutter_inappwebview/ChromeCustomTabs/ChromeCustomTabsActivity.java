@@ -229,6 +229,5 @@ public class ChromeCustomTabsActivity extends Activity implements MethodChannel.
     finish();
     Map<String, Object> obj = new HashMap<>();
     channel.invokeMethod("onChromeSafariBrowserClosed", obj);
->>>>>>> Stashed changes:android/src/main/java/com/pichillilorenzo/flutter_inappwebview/chrome_custom_tabs/ChromeCustomTabsActivity.java
   }
 }
