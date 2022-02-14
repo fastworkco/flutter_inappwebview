@@ -218,16 +218,4 @@ public class ChromeCustomTabsActivity extends Activity implements MethodChannel.
               this, actionSourceId, actionIntent, PendingIntent.FLAG_UPDATE_CURRENT);
     }
   }
-
-  public void dispose() {
-    channel.setMethodCallHandler(null);
-    manager = null;
-  }
-
-  public void close() {
-    customTabsSession = null;
-    finish();
-    Map<String, Object> obj = new HashMap<>();
-    channel.invokeMethod("onChromeSafariBrowserClosed", obj);
-  }
 }
