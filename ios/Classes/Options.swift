@@ -20,6 +20,7 @@ public class Options<T>: NSObject {
                 if self.responds(to: Selector(key)) {
                     self.setValue(value, forKey: key)
                 }
+            }
         }
         return self
     }
